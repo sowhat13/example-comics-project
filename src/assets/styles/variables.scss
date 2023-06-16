@@ -1,0 +1,163 @@
+$navbar-height: 104px;
+$font-family: 'Poppins', sans-serif;
+
+
+
+
+.main-layout {
+    min-height: calc(100vh - $navbar-height);
+}
+
+
+//colors
+
+    $background-color: #060e1d;
+    $primary-color: #27496D;
+    $secondary-color: #0C7B93;
+    $accent-color: #00A8CC;
+    $accent-color-50: #00a7cc85;
+    $green-color: #46ff83;
+    $green-color-50: #46ff8477;
+    $light-color: #f3f4ff;
+    $content-color: #f3f4ff;
+    $dark-color: #181933;
+    $dark-color-light: #142850;
+    $gray-color: #ebebeb;
+    $gray-color2: #f6efff;
+    $gray-color3: #858597;
+    $text-color: #a4aec7;
+    $red-color: rgb(255, 83, 83);
+    $primary-gradient: linear-gradient(140deg, #77e3fc 33%, #8eeaff 50%, #50dfff 75%);
+    $secondary-gradient: linear-gradient(140deg, #163168 33%, #274685 50%, #2c4c8d 75%);
+
+    .dark {
+        background: var($background-color);
+        color: var($text-color);
+
+    }
+
+    ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $text-color;
+        opacity: 0.7;
+        /* Firefox */
+    }
+
+
+    
+
+//color class for each of these variables on up
+.color-background-color {
+    color: $background-color;
+}
+
+.color-primary-color {
+    color: $primary-color;
+}
+
+.color-secondary-color {
+    color: $secondary-color;
+}
+
+
+.color-accent-color {
+    color: $accent-color;
+}
+
+.color-light-color {
+    color: $light-color;
+}
+
+.color-content-color {
+    color: $content-color;
+}
+
+.color-dark-color {
+    color: $dark-color;
+}
+
+.color-dark-color-light {
+    color: $dark-color-light;
+}
+
+.color-gray-color {
+    color: $gray-color;
+}
+
+.color-gray-color2 {
+    color: $gray-color2;
+}
+
+.color-gray-color3 {
+    color: $gray-color3;
+}
+
+.color-text-color {
+    color: $text-color;
+}
+
+.color-red-color {
+    color: $red-color;
+}
+
+//background color class for each of these variables on up
+.bg-background-color {
+    background-color: $background-color;
+}
+
+.bg-primary-color {
+    background-color: $primary-color;
+}
+
+.bg-secondary-color {
+    background-color: $secondary-color;
+}
+
+.bg-accent-color {
+    background-color: $accent-color;
+}
+
+.bg-light-color {
+    background-color: $light-color;
+}
+
+.bg-content-color {
+    background-color: $content-color;
+}
+
+.bg-dark-color {
+    background-color: $dark-color;
+}
+
+.bg-dark-color-light {
+    background-color: $dark-color-light;
+}
+
+.bg-gray-color {
+    background-color: $gray-color;
+}
+
+.bg-gray-color2 {
+    background-color: $gray-color2;
+}
+
+.bg-gray-color3 {
+    background-color: $gray-color3;
+}
+
+
+.bg-text-color {
+    background-color: $text-color;
+}
+
+.bg-red-color {
+    background-color: $red-color;
+}
+
+.bg-image-none {
+    background-image: unset;
+}
+
+.bg-primary-gradient {
+    background-image: $primary-gradient;
+}

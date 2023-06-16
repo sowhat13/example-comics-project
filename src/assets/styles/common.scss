@@ -1,0 +1,106 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+
+        .icon {
+            transition: all 0.3s ease;
+
+            color: $accent-color !important;
+        }
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    color: $secondary-color;
+    transition: all 0.3s ease;
+
+}
+
+
+.gradient-text {
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.unselectable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.shiny-element {
+    background: linear-gradient(125deg, #eee 25%, #dddddd 50%, #eee 75%) rgb(165, 165, 165);
+    animation: shine-right 8s infinite forwards;
+    background-size: 300% 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//animations
+@keyframes shine-right {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 250%;
+    }
+
+    100% {
+        background-position: 0%;
+
+    }
+}
+
+@keyframes shine-bottom {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 0% 90%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+
+    }
+}

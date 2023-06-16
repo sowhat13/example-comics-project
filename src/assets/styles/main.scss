@@ -1,0 +1,42 @@
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./common.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+.container {
+    @include container;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(160deg, $accent-color,$secondary-color );
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  ::-webkit-scrollbar-track {
+    background: $dark-color;
+    border: 0px none $dark-color;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
